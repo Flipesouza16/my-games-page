@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <title>My Games</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-content">
+            <div class="icon">
+                <img src="./img/myGameIcon.png" no-repeat alt="Icon"> 
+                <strong>My Games</strong>
+            </div>
+
+            <a href="/create-game">
+                <i class="fas fa-angle-right"></i>
+                <strong>
+                    Register a game for your list
+                </strong>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <a href="/searchAll">
+            <strong>Access my games list</strong>
+        </a>
+        <a href="#" class="btn-search">
+            <span><i class="fas fa-search"></i></span>
+            <strong>Search for a game</strong>
+        </a>
+    </main>
+
+    <div id="modal" class="hide">
+        <div class="content">
+            <div class="header">
+                <h1>Registered Games</h1>
+                <a href="#"><i class="fas fa-times-circle"></i></a>
+            </div>
+            <form action="/search">
+                <label for="search">
+                    Game
+                </label>
+                <div class="search field">
+                    <input type="text"
+                     name="search"
+                     placeholder="Pesquise por jogo"
+                     >
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+<script src="./scripts/index.js"></script>
+</body>
+
+</html>

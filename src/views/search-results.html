@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/searchResults.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="top-content">
+            <div class="icon">
+                <img src="./img/myGameIcon.png" no-repeat alt="Icon">
+                <strong>My Games</strong>
+            </div>
+
+            <h1>List Games</h1>
+
+            <a href="/">
+                <i class="fas fa-angle-left"></i>
+                <strong>
+                    Back to home
+                </strong>
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        {% if total > 0 %}
+
+            <h3 class="results">
+                 {{ total }} games found
+            </h3>
+
+            <div class="cards">
+
+                {% for game in games %}
+
+                    <div class="card">
+                        <img src="{{ game.image }}"
+                            alt="{{ game.name }}">
+                        <h1>{{ game.name }}</h1>
+                        <h3>Genre: {{ game.genre }}</h3>
+                        <p>
+                           Finished:  {{ game.finished }}
+                        </p>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+        {% else %}
+            <h2 class="results">No games found</h2>
+        {% endif %}
+
+       
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+
+strong {
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    background-color: rgba(0, 0, 0, 0.432);
+    margin: 0 auto;
+
+    margin-top: 30px;
+   
+     /* preenchimento */
+     padding: 24px;
+
+     border-radius: 8px;
+ 
+     max-width: 600px;
+}
+
+main h1 {
+    margin-top: 10px;
+    font-size: 35px;
+    text-align: center;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 34px;
+    border: 0;
+}
+
+form legend{
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    width: 100%;
+}
+
+form legend h2{
+    font-size: 24px;
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+form .field-group{
+    display: flex;
+}
+
+form .radio-group {
+    margin: 15px 0 0 15px;
+    max-width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form select {
+    background-color: #f0f0f5;
+
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+
+    outline: none;
+
+    border-radius: 8px;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+form .field-group  .field + .field{
+    margin-left: 24px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+
+    background-color: rgb(10, 10, 10);
+    border-radius: 8px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+    border: 0;
+
+    margin-top: 40px;
+
+    transition: background-color 400ms;
+
+    box-shadow: inset 1px 1px 10px #f0f0f536;
+}
+
+form button:hover {
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+/* isto é para o modal point-created */
+
+#modal.point {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+
+    background-color: #0f0c14d3;
+
+    box-shadow: inset 120px 100px 250px #000000;
+
+    color: var(--title-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+}
+
+#modal.point .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.point h1 {
+    color: var(--title-color);
+
+    margin-top: 32px;
+}
+
+#modal.point i {
+    font-size: 30px;
+}
+

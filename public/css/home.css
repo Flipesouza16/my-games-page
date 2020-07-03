@@ -1,0 +1,140 @@
+/* Dow Content */
+
+html {
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000dc, inset 120px 100px 250px #000000c2, inset -120px -100px 250px #000000cb;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main a span {
+    margin-right: 10px;
+    display: flex;
+}
+
+main a {
+    border-radius: 5px;
+    margin: 5px;
+    text-transform: uppercase;
+
+    background-color: var(--dark-color);
+    color: #fff;
+
+    padding: 1.5rem;
+    width: 230px;
+    text-align: center;
+    font-weight: 700;
+}
+
+main .btn-search {
+    display: flex;
+    justify-content: center;
+}
+
+main .btn-search span {
+    margin-right: 18px;
+}
+
+main .btn-search strong {
+    margin-right: 18px;
+}
+
+
+
+/**********************************/
+
+#modal {
+    background-color: #0f0c14d3;
+
+    box-shadow: inset 120px 100px 250px #000000;
+
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 400ms;
+}
+
+#modal.hide {
+    display: none;
+}
+
+#modal .content {
+    color: white;
+
+    
+}
+
+#modal .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 48px;
+
+}
+
+#modal .header a {
+    font-size: 23px;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    color: rgb(156, 156, 156);
+}
+
+#modal .header h1{
+    font-size: 36px;
+    line-height: 42px;
+}
+
+#modal form label {
+    font-size: 18px;
+    line-height: 16px;
+
+    display: block;
+    margin-bottom: 8px;
+}
+
+#modal form .field {
+    display: flex;
+}
+
+#modal form input {
+    flex: 1;
+
+    background-color: #f0f0f5;
+
+    border-radius: 8px 0 0 8px;
+    border: 0;
+
+    padding: 16px 24px;
+
+    font-size: 16px;
+    color: #6c6c80;
+}
+
+#modal form button {
+    width: 72px;
+    height: 72px;
+
+    background-color: rgb(156, 156, 156);
+
+    border: 0;
+    border-radius: 0 8px 8px 0;
+}
+
+#modal form button:hover{
+    background-color:rgb(129, 129, 129);
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List Games</title>
+
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/createList.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="top-content">
+                <div class="icon">
+                    <img src="./img/myGameIcon.png" no-repeat="no-repeat" alt="Icon">
+                    <strong>My Games</strong>
+                </div>
+
+                <a href="/">
+                    <i class="fas fa-angle-left"></i>
+                    <strong>
+                        Back to home
+                    </strong>
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <h1>Register game</h1>
+
+            <form action="/savepoint" method="POST">
+                <fieldset>
+                    <legend>
+                        <h2>Game data</h2>
+                    </legend>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="name">Game name</label>
+                            <input type="text" name="name" required="required">
+                        </div>
+
+                        <div class="field">
+                            <label for="name">Game image</label>
+                            <input type="url" name="image" placeholder="http://" required="required">
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="categoria">Category</label>
+                            <select name="genre" required="required">
+                                <option value="">
+                                    Select Category
+                                </option>
+                                <option value="RPG">
+                                    RPG
+                                </option>
+                                <option value="FPS">
+                                    FPS
+                                </option>
+                                <option value="FIGHT">
+                                    FIGHT
+                                </option>
+                                <option value="ACTION / ADVENTURE">
+                                    ACTION / ADVENTURE
+                                </option>
+                                <option value="SPORT">
+                                    SPORT
+                                </option>
+                             
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="zerou">Have you finished this game?</label>
+
+                            <div class="radio-group">
+                                <strong>Yes</strong>
+                                <input type="radio" name="finished" value="Yes" required="required">
+
+                                <strong>No</strong>
+                                <input type="radio" name="finished" value="No" required="required">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <button type="submit">Register game</button>
+
+            </form>
+        </main>
+
+        {% if saved %}
+            <div id="modal" class="point">
+                <div class="content">
+                    <i class="far fa-check-circle"></i>
+                    <h1>Registration completed</h1>
+                </div>
+            </div>
+
+            <script>
+                setTimeout(() => {
+                    window.location = "/"
+                }, 2000)
+            </script>
+        {% endif %}
+    </body>
+
+</html>

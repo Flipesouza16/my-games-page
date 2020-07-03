@@ -1,0 +1,90 @@
+:root {
+    --title-color: #d9e3eb;
+    --dark-color: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+    background: url('../img/backgroundFantasy.jpg') no-repeat center center/cover;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,strong,label,p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+}
+
+/* Top Content */
+.top-content {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.top-content img {
+    width: 50px;
+    height: 50px;
+    color: var(--title-color);
+    box-shadow: inset 5px 10px 20px #fff, inset 10px 10px 20px rgb(194, 175, 147);
+}
+
+.top-content strong {
+    font-size: 26px;
+    margin-left: 15px;    
+    font-weight: 700;
+    margin-top: 13px;
+    color: var(--title-color);
+
+    box-shadow:  1px 1px 30px rgba(0, 0, 0, 0.5);
+
+    padding: 0;
+    border: none;
+}
+
+/*
+.top-content .icon strong {
+    font-size: 25px;
+}
+*/
+.top-content a {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--title-color);
+    border-radius: 5%;
+    margin-top: 22px;
+}
+
+.top-content a strong {
+    font-size: 18px;
+}
+
+@media(min-width:1200px){
+    .top-content {
+        max-width: 850px;
+    }
+}
+
+
