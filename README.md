@@ -1,5 +1,5 @@
 # my-games-page
-<h3>Aplicação simples para salvar uma lista de cards de jogos em um banco de dados locais (sqlite3)</h3>
+<h3>Aplicação simples para salvar uma lista de cards de jogos em um banco de dados local (sqlite3)</h3>
 
 <h2>Tecnologias</h2>
 <ul>
