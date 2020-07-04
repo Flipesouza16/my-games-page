@@ -7,10 +7,12 @@ server.use(express.static("public"))
 // Habilitar o uso do req.body nessa aplicação
 server.use(express.urlencoded({ extended: true }))
 
-// utilizando template engine
-const nujuncks = require("nunjucks")
+// banco de dados
 const db = require('./database/db')
 
+
+// utilizando template engine
+const nujuncks = require("nunjucks")
 nujuncks.configure("src/views", {
     express: server,
     noCache: true
